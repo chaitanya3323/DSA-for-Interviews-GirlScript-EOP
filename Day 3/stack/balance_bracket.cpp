@@ -5,7 +5,7 @@
 // for now assume there is a Stack class :))
 using namespace std;
 bool sol(string arr){
-    if(arr.size()%2 !=0 ){ 
+    if(arr.size()%2 !=0 || arr[arr.size()-1]='('){ 
         // if odd length ..then can never be balanced
         return false;
     }
